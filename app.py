@@ -47,7 +47,7 @@ def get_rds_secrets(secret_name):
 # Load secrets from Secrets Manager
 def get_rds_connection():
     try:
-        secret = get_rds_secrets('rdsSecret')
+        secret = get_rds_secrets('rds_secret_jshi0843')
         if not secret:
             print("Failed to load RDS Secret")
             return None
